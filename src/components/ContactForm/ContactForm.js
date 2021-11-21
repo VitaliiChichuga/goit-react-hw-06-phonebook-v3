@@ -11,7 +11,7 @@ const ContactForm = () => {
   const contactList = useSelector(getContactsList);
   const dispatch = useDispatch();
 
-  const nameInputId = uuid();
+  // const nameInputId = uuid();
   const numberInputId = uuid();
 
   const [name, setName] = useState('');
@@ -56,7 +56,6 @@ const ContactForm = () => {
           type="text"
           name="name"
           value={name}
-          id={nameInputId}
           onChange={handleChangeName}
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."

@@ -1,5 +1,4 @@
 import s from './Filter.module.css';
-import PropTypes from 'prop-types';
 import { filterContact } from '../../redux/contacts/actions';
 import { useDispatch } from 'react-redux';
 
@@ -16,8 +15,4 @@ const Filter = () => {
   );
 };
 
-Filter.propType = {
-  onChange: PropTypes.func,
-  value: PropTypes.string,
-};
 export default Filter;

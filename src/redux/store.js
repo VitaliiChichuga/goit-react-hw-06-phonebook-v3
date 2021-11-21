@@ -18,7 +18,7 @@ const persistConfig = {
   key: 'contacts',
   version: 1,
   storage,
-  blacklist: ['filter', 'filteredCont'],
+  blacklist: ['filter'],
 };
 export const rootReducer = combineReducers({
   contacts: contactsListReducer,
